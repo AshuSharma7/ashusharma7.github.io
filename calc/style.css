@@ -3,12 +3,12 @@ body {
     background-attachment: fixed;
     font-family: "Jost", serif;
     height: 100%;
+    width: 100%;
     margin: 0
 }
 
 #container {
     padding-top: 20px;
-    height: 100%;
 }
 
 #calculator {
@@ -139,4 +139,79 @@ button:nth-child(20) {
 
 .number:hover {
     border-radius: 40px;
+}
+
+@media screen and (max-width: 980px) {
+
+    #name {
+        padding-top: 10px;
+        font-size: 60px;
+    }
+
+    .number:active, .operator:active {
+        font-size: 35px;
+    }
+    
+    #desc {
+        font-size: 35px;
+    }
+
+    #calculator {
+        width: 720px;
+        height: 1000px;
+        padding-left: 50px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.4);
+        border-radius: 30px;
+    }
+
+    #result {
+        height: 180px;
+    }
+    
+    #history, #output {
+        padding-right: 10px;
+        text-align: right;
+    }
+    
+    #history {
+        color: #919199;
+        height: 20px;
+        padding-top: 10px;
+        font-size: 30px;
+    }
+    
+    #output {
+        color: black;
+        height: 80px;
+        font-size: 70px;
+    }
+    
+    #keyboard {
+        height: 100%;
+        width: 100%;
+    }
+
+    #link > a {
+        color: white;
+        font-size: 45px;
+        text-decoration: none;
+    }
+
+    .operator, .number, .empty {
+        font-size: 42px;
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+        float: left;
+    }
+    
+    .operator {
+        font-size: 50px;
+    }
+    
+    .operator {
+        border-radius: 50%;
+        border: none;
+    }
+    
 }
