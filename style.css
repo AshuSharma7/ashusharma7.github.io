@@ -3,7 +3,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #eae7dc;
+    background-color: black;
 }
 
 .top {
@@ -11,10 +11,12 @@ body {
     margin: 20px;
     display: flex;
     font-size: 25px;
+    color: #F1F1F1;
 }
 
 .top .nav {
     margin-left: auto;
+    
 }
 
 .nav-items a:hover {
@@ -31,9 +33,10 @@ body {
 }
 
 .name {
-    padding-top: 300px;
-    height: 400px;
-    font-size: 70px;
+    padding-top: 20%;
+    /* height: 400px; */
+    padding-bottom: 20%;
+    font-size: 100px;
     text-align: center;
     justify-content: center;
     color: #e98074;
@@ -47,8 +50,8 @@ body {
 
 .name .intro, .name .info  {
     color: #8e8d8a;
-    font-size: 25px;
-    font-family: "Comfortaa", serif;
+    font-size: 35px;
+    font-family: 'Julius Sans One', serif;
 }
 
 #about {
@@ -56,19 +59,21 @@ body {
     padding-top: 20px;
     align-items: center;
     font-size: 40px;
-    height: 500px;
+    height: 700px;
     text-align: center;
     width: 100%;
     font-family: "Bebas Neue", serif;
-    background-color: #d8c3a5;
+    background-color: #F1F1F1;
 }
 
 #about .desc {
+    padding-bottom: 50px;
     font-size: 30px;
-    font-family: "Comfortaa", serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #about .skills {
+    padding-top: 30px;
     font-size: 30px;
     justify-content: center;
     text-align: center;
@@ -76,12 +81,15 @@ body {
 }
 
 .skills .card {
-    transition: transform .2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     background-color: #fff;
     margin-left: 10px;
     margin-right: 10px;
-    width: 130px;
-    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 170px;
 }
 
 .card .level {
@@ -90,16 +98,17 @@ body {
 }
 
 .card:hover { 
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
-    transform: scale(1.1);
+    transform: translateY(-20px);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.5);
 }
 
 .project {
     height: 500px;
     justify-content: center;
     align-items: center;
+    color: #F1F1F1;
     text-align: center;
-    background-color: #e85a4f;
+    background-color: black;
     padding-top: 20px;
     font-family: "Bebas Neue", serif;
     font-size: 40px;
@@ -115,13 +124,15 @@ body {
 }
 
 .project .pcard {
-    transition: transform .2s;
-    padding: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     margin-left: 10px;
     margin-right: 10px;
     background-color: #fff;
     color: black;
-    width: 150px;
+    width: 170px;
+    height: 150px;
+    padding: 30px;
 }
 
 .pcard .pname {
@@ -134,18 +145,31 @@ body {
 }
 
 .project .pcard:hover {
-    transform: scale(1.1);
+    transform: translateY(-20px);
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    color: #F1F1F1;
+    font-family: 'Julius Sans One', serif;
+    padding-left: 30px;
 }
 
 @media screen and (max-width: 1000px) {
-    .top {
+    /* .top {
         display: none;
+    } */
+
+    .top {
+        font-size: 50px;
     }
 
     .name {
-        margin-top: 300px;
+        padding-top: 55%;
+    /* height: 400px; */
+    padding-bottom: 60%;
         font-size: 200px;
-        height: 1200px;
+        /* height: 1200px; */
     }
     .name .intro, .name .info {
         font-size: 50px;
@@ -155,7 +179,7 @@ body {
         align-items: center;
         text-align: center;
         justify-content: center;
-        height: 1200px;
+        height: 1900px;
         font-size: 70px;
 
     }
@@ -164,26 +188,37 @@ body {
         font-size: 40px;
     }
 
-    #about .skills {
+    #about > .skills {
         text-align: center;
         justify-content: center;
         display: block;
     }
 
-    .skills .card {
-        margin: 10px;
+    .skills > .card {
         float: left;
-        height: 250px;
-        width: 300px;
+        margin: 20px;
+        height: 350px;
+        width: 400px;
         font-size: 50px;
+        padding: unset;
+    }
+
+    .skills {
+        margin: 50px;
     }
 
     .card .level {
         font-size: 40px;
     }
 
+    .card:hover { 
+        transform: translateY(-30px);
+        box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.4);
+    }
+
     .project {
-        height: 1000px;
+        padding: unset;
+        height: 1500px;
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -198,11 +233,18 @@ body {
     }
 
     .row1 .pcard {
-        margin: 15px;
+        background-color: #fff;
+        color: black;
         float: left;
-        height: 310px;
-        width: 280px;
+        margin: 20px;
+        padding: unset;
+        height: 350px;
+        width: 400px;
         font-size: 50px;
+    }
+
+    .project > .row1 {
+        margin: 40px;
     }
 
     .pcard .pname {
@@ -211,5 +253,15 @@ body {
     .pcard .pdesc {
         font-size: 40px;
     }
+    .project .pcard:hover {
+        transform: translateY(-30px);
+        box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.4);
+    }
 
+    footer {
+        text-align: center;
+        font-size: 15px;
+        padding-left: 30px;
+        padding-bottom: 5px;
+    }
 }
