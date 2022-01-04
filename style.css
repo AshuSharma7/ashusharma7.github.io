@@ -3,265 +3,370 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #F1F1F1;
+    scroll-behavior: smooth;
 }
 
-.top {
-    font-family: "Bebas Neue", serif;
-    margin: 20px;
-    display: flex;
-    font-size: 25px;
-    color: #F1F1F1;
-}
+#top {
 
-.top .nav {
-    margin-left: auto;
-    
-}
-
-.nav-items a:hover {
-    padding: 10px;
-    background-color: #e98074;
-    color: #fff;
-}
-
-.nav-items a {
-    padding: 10px;
-    color: #8e8d8a;
-    margin-right: 5px;
-    text-decoration: none;
-}
-
-.name {
-    padding-top: 20%;
+    padding-top: 16%;
     /* height: 400px; */
-    padding-bottom: 20%;
-    font-size: 100px;
+    /*  */
+    padding-bottom: 16%;
+}
+
+#title {
     text-align: center;
     justify-content: center;
-    color: #e98074;
     align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    font-size: 60px;
+    color: black;
 }
-.name p {
+
+#greet {
+    font-size: 300px;
     margin: 0;
     padding: 0;
-    font-family: "Lobster Two", serif;
 }
 
-.name .intro, .name .info  {
-    color: #8e8d8a;
-    font-size: 35px;
-    font-family: 'Julius Sans One', serif;
+#row {
+    color: #F67280;
+
+        font-family: 'Montserrat', sans-serif;
+    text-align: start;
 }
 
-#about {
+#i {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+#links {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#links div {
+    margin: 1rem;
+}
+
+#links img {
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+#me {
     justify-content: center;
     padding-top: 20px;
+    /* display: flex; */
+    display: none;
     align-items: center;
     font-size: 40px;
-    height: 700px;
+    height: 100%;
     text-align: center;
     width: 100%;
     font-family: "Bebas Neue", serif;
+    background-color: #2A363B ;
+    color: #F1F1F1;
+}
+
+#a {
+    justify-content: left;
+    justify-items: left;
+    text-align: center;
+    line-height: 145px;
+}
+
+.a1 {
+    text-align: center;
+    font-size: 220px;
+    color: #F8B195;
+}
+
+.a2 {
+    font-family: "Montserrat";
+    font-size: 400px;
+    margin: 5rem;
+    color: #F1F1F1;
+}
+
+#desc {
+    /* box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px; */
+    padding: 60px;
+    margin-left: 2rem;
+    /* background-color: #FECEAB; */
+    color:#F1F1F1;
+    text-align: start;
+    width: 35%;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#skills, #project{
+    justify-content: center;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    font-family: "Bebas Neue", serif;
+    background-color: #2A363B ;
+    color: #F1F1F1 ;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ /* The Modal (background) */
+ .modal {
+    box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+      font-family: "Montserrat";
+    box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    background-color: #F1F1F1;
+    color: #262626;
+    margin: 20% auto; /* 15% from the top and centered */
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+
+  .view {
+    display:inline-block;
+   padding: 20px;
+   /* margin:0 0.3em 0.3em 0; */
+   box-sizing: border-box;
+  /* font-size: 30px; */
+   text-decoration:none;
+   font-family:'Roboto',sans-serif;
+    border-radius: 15px;
+   color:#FFFFFF;
+   background-color:#4eb5f1;
+   text-align:center;
+    background-color: #F67280;
+  }
+
+  .view {
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#st {
+    color:#262626 ;
+
+    caret-color:#e0e5eb;
+    outline: none;
+ }
+ #project {
+   background-color: #2A363B ;
+   background-color: #F1F1F1 ;
+ }
+
+ #plist div:hover {
+    animation: move 0.5s ease-in-out forwards;
+  }
+
+  #plist div {
+    animation: moveout 0.5s ease-in-out;
+  }
+
+ @keyframes move {
+    0% {
+       transform: translate(0%, 0%);
+    }
+
+    100% {
+        text-shadow: 5px -10px 18px rgba(255, 255, 255, 0.5);
+        transform: translate(0%, -30%);
+    }
+  }
+
+  @keyframes moveout {
+    0% {
+        text-shadow: 5px -10px 15px rgba(255, 255, 255, 0.4);
+        transform: translate(0%, -30%);
+    }
+    100% {
+       transform: translate(0%, 0%);
+    }
+
+
+  }
+
+#st, #pt {
+    color: #99B898;
+    line-height: 150px;
+    font-size: 220px;
+}
+
+#list, #plist, #love {
+    text-align: start;
+    line-height: 50px;
+    font-size: 70px;
+}
+
+#project {
+    color: #2A363B;
     background-color: #F1F1F1;
 }
 
-#about .desc {
-    padding-bottom: 50px;
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
+#pt {
+    color: #FF847C;
 }
 
-#about .skills {
-    padding-top: 30px;
-    font-size: 30px;
-    justify-content: center;
-    text-align: center;
-    display: flex;
+#pdesc {
+    display: none;
 }
 
-.skills .card {
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    background-color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin: 10px;
-    padding: 20px;
-    width: 150px;
-    height: 170px;
-}
 
-.card .level {
-    font-family: "Comfortaa", serif;
-    font-size: 18px;
-}
-
-.card:hover { 
-    transform: translateY(-20px);
-    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.5);
-}
-
-.project {
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-    color: #F1F1F1;
-    text-align: center;
-    background-color: black;
-    padding-top: 20px;
-    font-family: "Bebas Neue", serif;
-    font-size: 40px;
-}
-
-.project .row1 {
-    justify-content: center;
-    display: flex;
-}
-
-.row1 a {
-    text-decoration: none;
-}
-
-.project .pcard {
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #fff;
-    color: black;
-    width: 170px;
-    height: 150px;
-    padding: 30px;
-}
-
-.pcard .pname {
-    font-size: 30px;
-} 
-
-.pcard .pdesc {
-    font-size: 18px;
-    font-family: "Comfortaa", serif;
-}
-
-.project .pcard:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.5);
-}
-
-footer {
-    color: #F1F1F1;
-    font-family: 'Julius Sans One', serif;
-    padding-left: 30px;
-}
 
 @media screen and (max-width: 1000px) {
-    /* .top {
+    #top {
+  justify-content: center;
+  align-items: center;
+        padding-top: 60%;
+        padding-bottom: 70%;
+    }
+
+    .modal-content {
+      height: 80%;
+      margin: 20% auto; /* 15% from the top and centered */
+      padding: 20px;
+      /* border: 1px solid #888; */
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    #title {
+        font-size: 100px;
+    }
+
+    #greet {
+        font-size: 500px;
+    }
+
+    #links img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    #me {
+        /* display: inline-flex; */
         display: none;
-    } */
-
-    .top {
-        font-size: 50px;
-    }
-
-    .name {
-        padding-top: 55%;
-    /* height: 400px; */
-    padding-bottom: 60%;
-        font-size: 200px;
-        /* height: 1200px; */
-    }
-    .name .intro, .name .info {
-        font-size: 50px;
-    }
-
-    #about {
         align-items: center;
-        text-align: center;
+        align-content: center;
         justify-content: center;
-        height: 1900px;
-        font-size: 70px;
-
-    }
-
-    #about .desc {
+        padding-top: 5%;
+        padding-bottom: 5%;
         font-size: 40px;
+        height: 100%;
+        text-align: right;
+        width: 100%;
+        font-family: "Bebas Neue", serif;
     }
 
-    #about > .skills {
+    #a div {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    #a {
+        line-height: 220px;
+    }
+
+    .a1 {
         text-align: center;
-        justify-content: center;
-        display: block;
+        font-size: 320px;
+        color: #F8B195;
     }
 
-    .skills > .card {
-        float: left;
-        margin: 20px;
-        height: 350px;
-        width: 400px;
-        font-size: 50px;
-        padding: unset;
+    .a2 {
+        font-family: "Montserrat";
+        font-size: 400px;
+        margin: 0;
+        color: #F1F1F1;
+        display: none;
     }
 
-    .skills {
-        margin: 50px;
+
+
+
+
+    #desc {
+        text-align: start;
+        width: unset;
+        font-size: 45px;
+        font-family: 'Raleway', sans-serif;
+
     }
 
-    .card .level {
-        font-size: 40px;
+    #skills, #project {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        height: 100%;
     }
 
-    .card:hover { 
-        transform: translateY(-30px);
-        box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.4);
+    #st, #pt, .a1 {
+        line-height: 220px;
+        font-size: 330px;
     }
 
-    .project {
-        padding: unset;
-        height: 1500px;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        font-size: 70px;
+    #list, #plist, #love {
+        line-height: 75px;
+        font-size: 100px;
     }
 
-    .project .row1 {
-        text-align: center;
-        justify-content: center;
-        font-size: 70px;
-        display: block;
+    #love {
+     margin-left: 5rem;
     }
 
-    .row1 .pcard {
-        background-color: #fff;
-        color: black;
-        float: left;
-        margin: 20px;
-        padding: unset;
-        height: 350px;
-        width: 400px;
-        font-size: 50px;
-    }
-
-    .project > .row1 {
-        margin: 40px;
-    }
-
-    .pcard .pname {
-        font-size: 50px;
-    }
-    .pcard .pdesc {
-        font-size: 40px;
-    }
-    .project .pcard:hover {
-        transform: translateY(-30px);
-        box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.4);
-    }
-
-    footer {
-        text-align: center;
-        font-size: 15px;
-        padding-left: 30px;
-        padding-bottom: 5px;
-    }
 }
